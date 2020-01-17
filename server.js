@@ -10,8 +10,8 @@ server.use(express.json());
 server.use('/api/projects', projectsRouter);
 server.use('/api/actions', actionsRouter);
 
-server.get('/', (req, res) => {
-    res.send(`<h2>Node API Challenge</h2>`)
+server.get('/', (req,res) =>{
+    res.status(200).send(`<h1>Node API Challenge Server</h1>`);
 });
 
 module.exports = server;
